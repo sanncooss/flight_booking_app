@@ -10,7 +10,7 @@ class TranslatableText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      textKey.tr(), // Automatically translates the key
+      textKey.tr(), 
       style: style,
     );
   }

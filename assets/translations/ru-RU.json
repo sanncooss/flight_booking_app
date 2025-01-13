@@ -4,6 +4,10 @@
   "Book Appointment in Easiest Way!": "Забронируйте встречу самым простым способом!",
   "Skip": "Пропустить",
   "Next": "Далее",
+  "Select your language": "Выберите язык",
+  "English": "Английский",
+  "Uzbek": "Узбекский",
+  "Russian": "Русский",
   "Sign in": "Войти",
   "Sign up": "Зарегистрироваться",
   "Proceed The Payment": "Перейти к оплате",
@@ -18,7 +22,7 @@
   "Or Sign In With": "Или войдите с помощью",
   "Already have an account?": "Уже есть аккаунт?",
   "Or Sign Up With": "Или зарегистрируйтесь с помощью",
-  "Don’t Have an Account?": "У вас нет аккаунта?",
+  "Don't Have an Account?": "У вас нет аккаунта?",
   "My Profile": "Мой профиль",
   "Isfandiyor Madaminov": "Исфандийор Мадаминов",
   "isfandiyormadaminov12@gmail.com": "isfandiyormadaminov12@gmail.com",
@@ -42,8 +46,7 @@
   "August 28, 2021": "28 августа 2021",
   "Travelers": "Путешественники",
   "1 Adult, 1 child, 0 Infant": "1 взрослый, 1 ребенок, 0 младенцев",
-  "Transaction": "Транзакция",
-  "Let’s go somewhere": "Поехали куда-нибудь",
+  "Let's go somewhere": "Поехали куда-нибудь",
   "After book a trip you can manage orders and see E-ticket here.": "После бронирования поездки вы можете управлять заказами и увидеть электронный билет здесь.",
   "Book a trip": "Забронировать поездку",
   "Language": "Язык",
@@ -120,5 +123,4 @@
   "Forgot passcode?": "Забыли пароль?",
   "Order Confirmed": "Заказ подтвержден",
   "Thank you for your order. You will receive email confirmation shortly.": "Спасибо за ваш заказ. Вы вскоре получите подтверждение по электронной почте."
-
 }

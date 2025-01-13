@@ -14,6 +14,7 @@ class LanguagePage extends StatefulWidget {
 
 class _LanguagePageState extends State<LanguagePage> {
   int? selectedOption;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,15 +35,18 @@ class _LanguagePageState extends State<LanguagePage> {
             ),
             h25,
             TranslatableText(
-              'Language',
+              'Select your language',
               style: TextStyle(
-                fontSize: 20  ,
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            GestureDetector(
+            InkWell(
               onTap: () {
-
+                setState(() {
+                  selectedOption = 1;
+                });
+                context.setLocale(Locale('en', 'US'));
               },
               child: Container(
                 width: double.infinity,
@@ -77,68 +81,84 @@ class _LanguagePageState extends State<LanguagePage> {
                 ),
               ),
             ),
-            Container(
-              width: double.infinity,
-              height: 60,
-              decoration: BoxDecoration(
-                  border: Border(
-                      bottom: BorderSide(
-                color: greyish,
-                width: 1,
-              ))),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  TranslatableText(
-                    'Uzbek',
-                    style: TextStyle(
-                      fontSize: 20,
+            InkWell(
+              onTap: () {
+                setState(() {
+                  selectedOption = 2;
+                });
+                context.setLocale(Locale('uz', 'UZ'));
+              },
+              child: Container(
+                width: double.infinity,
+                height: 60,
+                decoration: BoxDecoration(
+                    border: Border(
+                        bottom: BorderSide(
+                  color: greyish,
+                  width: 1,
+                ))),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    TranslatableText(
+                      'Uzbek',
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
                     ),
-                  ),
-                  Radio(
-                    activeColor: darkBlue,
-                    value: 2,
-                    splashRadius: 10,
-                    groupValue: selectedOption,
-                    onChanged: (value) {
-                      setState(() {
-                        selectedOption = value;
-                      });
-                    },
-                  ),
-                ],
+                    Radio(
+                      activeColor: darkBlue,
+                      value: 2,
+                      splashRadius: 10,
+                      groupValue: selectedOption,
+                      onChanged: (value) {
+                        setState(() {
+                          selectedOption = value;
+                        });
+                      },
+                    ),
+                  ],
+                ),
               ),
             ),
-            Container(
-              width: double.infinity,
-              height: 60,
-              decoration: BoxDecoration(
-                  border: Border(
-                      bottom: BorderSide(
-                color: greyish,
-                width: 1,
-              ))),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  TranslatableText(
-                    'Russian',
-                    style: TextStyle(
-                      fontSize: 20,
+            InkWell(
+              onTap: () {
+                setState(() {
+                  selectedOption = 3;
+                });
+                context.setLocale(Locale('ru', 'RU'));
+              },
+              child: Container(
+                width: double.infinity,
+                height: 60,
+                decoration: BoxDecoration(
+                    border: Border(
+                        bottom: BorderSide(
+                  color: greyish,
+                  width: 1,
+                ))),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    TranslatableText(
+                      'Russian',
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
                     ),
-                  ),
-                  Radio(
-                    activeColor: darkBlue,
-                    value: 3,
-                    splashRadius: 10,
-                    groupValue: selectedOption,
-                    onChanged: (value) {
-                      setState(() {
-                        selectedOption = value;
-                      });
-                    },
-                  ),
-                ],
+                    Radio(
+                      activeColor: darkBlue,
+                      value: 3,
+                      splashRadius: 10,
+                      groupValue: selectedOption,
+                      onChanged: (value) {
+                        setState(() {
+                          selectedOption = value;
+                        });
+                      },
+                    ),
+                  ],
+                ),
               ),
             )
           ],

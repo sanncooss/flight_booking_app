@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flight_booking_app/screens/core/routes.dart';
 import 'package:flight_booking_app/screens/registration/onboarding/splash_page.dart';
 import 'package:flutter/material.dart';
@@ -10,6 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      locale: context.locale,
+      supportedLocales: context.supportedLocales,
+      localizationsDelegates: context.localizationDelegates,
       debugShowCheckedModeBanner: false,
       getPages: getPages,
       theme: ThemeData(

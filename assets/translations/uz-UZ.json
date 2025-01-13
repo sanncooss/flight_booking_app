@@ -5,6 +5,10 @@
   "Skip": "O'tkazib yuborish",
   "Next": "Keyingi",
   "Sign in": "Kirish",
+  "Select your language": "Tilni tanlang",
+  "English": "Ingliz",
+  "Uzbek": "O'zbek",
+  "Russian": "Ruscha",
   "Sign up": "Ro'yxatdan o'tish",
   "Proceed The Payment": "To'lovni amalga oshirish",
   "Enter": "Kiritish",
@@ -42,14 +46,13 @@
   "August 28, 2021": "28 avgust 2021",
   "Travelers": "Sayohatchilar",
   "1 Adult, 1 child, 0 Infant": "1 kattalar, 1 bola, 0 chaqaloq",
-  "Transaction": "Transaksiya",
-  "Let’s go somewhere": "Kela, bir joyga boramiz",
+  "Let's go somewhere": "Kela, bir joyga boramiz",
   "After book a trip you can manage orders and see E-ticket here.": "Sayohatni bron qilgandan so'ng, buyurtmalarni boshqarishingiz va elektron chipta ko'rishingiz mumkin.",
   "Book a trip": "Sayohatni bron qilish",
   "Language": "Til",
   "Home": "Bosh sahifa",
   "Transaction": "Transaksiya",
-  "Account":"Hisob",
+  "Account": "Hisob",
   "General": "Umumiy",
   "Notification Settings": "Bildirishnoma Sozlamalari",
   "Location": "Joylashuv",
@@ -120,5 +123,4 @@
   "Forgot passcode?": "Parolni unutdingizmi?",
   "Order Confirmed": "Buyurtma tasdiqlandi",
   "Thank you for your order. You will receive email confirmation shortly.": "Buyurtmangiz uchun rahmat. Yaqinda elektron pochta orqali tasdiq olasiz."
-
 }
