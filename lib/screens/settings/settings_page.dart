@@ -69,24 +69,29 @@ class _SettingsPageState extends State<SettingsPage> {
                       ),
                     ),
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                        border: Border(bottom: BorderSide(color: greyish))),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 14.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            'Notification Settings',
-                            style: TextStyle(color: blackish, fontSize: 16),
-                          ),
-                          Icon(
-                            Icons.keyboard_arrow_right,
-                            size: 28,
-                            color: blackgrey,
-                          )
-                        ],
+                  GestureDetector(
+                    onTap: () {
+                      Get.toNamed(Routes.notificationSettings);
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                          border: Border(bottom: BorderSide(color: greyish))),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 14.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Notification Settings',
+                              style: TextStyle(color: blackish, fontSize: 16),
+                            ),
+                            Icon(
+                              Icons.keyboard_arrow_right,
+                              size: 28,
+                              color: blackgrey,
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -103,7 +108,7 @@ class _SettingsPageState extends State<SettingsPage> {
                           value: isToggled,
                           thumbColor: white,
                           activeTrackColor: blue,
-                          inactiveThumbColor: darkBlue,
+                          inactiveThumbColor: white,
                           onChanged: (value) {
                             setState(() {
                               isToggled = value;
@@ -123,63 +128,78 @@ class _SettingsPageState extends State<SettingsPage> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                decoration: BoxDecoration(
-                    border: Border(bottom: BorderSide(color: greyish))),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 14.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'Email and Mobile Number',
-                        style: TextStyle(color: blackish, fontSize: 16),
-                      ),
-                      Icon(
-                        Icons.keyboard_arrow_right,
-                        size: 28,
-                        color: blackgrey,
-                      )
-                    ],
-                  ),
-                ),
-              ),
-              Container(
-                decoration: BoxDecoration(
-                    border: Border(bottom: BorderSide(color: greyish))),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 14.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'Security settings',
-                        style: TextStyle(color: blackish, fontSize: 16),
-                      ),
-                      Icon(
-                        Icons.keyboard_arrow_right,
-                        size: 28,
-                        color: blackgrey,
-                      )
-                    ],
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 14.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      'Delete Account',
-                      style: TextStyle(color: blackish, fontSize: 16),
+              GestureDetector(
+                onTap: () {
+                  Get.toNamed(Routes.emailAndMobile);
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                      border: Border(bottom: BorderSide(color: greyish))),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 14.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Email and Mobile Number',
+                          style: TextStyle(color: blackish, fontSize: 16),
+                        ),
+                        Icon(
+                          Icons.keyboard_arrow_right,
+                          size: 28,
+                          color: blackgrey,
+                        )
+                      ],
                     ),
-                    Icon(
-                      Icons.keyboard_arrow_right,
-                      size: 28,
-                      color: blackgrey,
-                    )
-                  ],
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  Get.toNamed(Routes.securtySettings);
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                      border: Border(bottom: BorderSide(color: greyish))),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 14.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Security settings',
+                          style: TextStyle(color: blackish, fontSize: 16),
+                        ),
+                        Icon(
+                          Icons.keyboard_arrow_right,
+                          size: 28,
+                          color: blackgrey,
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  Get.toNamed(Routes.deletingAccount);
+                },
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 14.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Delete Account',
+                        style: TextStyle(color: blackish, fontSize: 16),
+                      ),
+                      Icon(
+                        Icons.keyboard_arrow_right,
+                        size: 28,
+                        color: blackgrey,
+                      )
+                    ],
+                  ),
                 ),
               ),
               h10,

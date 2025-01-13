@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flight_booking_app/screens/account/account_screen.dart';
 import 'package:flight_booking_app/screens/home/booking/discover_page.dart';
 import 'package:flight_booking_app/screens/home/booking/flights_list_screen.dart';
