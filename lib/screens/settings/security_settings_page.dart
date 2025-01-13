@@ -2,6 +2,7 @@ import 'package:flight_booking_app/screens/core/routes.dart';
 import 'package:flight_booking_app/utils/buttons.dart';
 import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -37,7 +38,7 @@ class _SecuritySettingsPageState extends State<SecuritySettingsPage> {
               height: 60,
               child: Padding(
                 padding: const EdgeInsets.only(left: 26.0),
-                child: Text(
+                child: TranslatableText(
                   'Security Settings',
                   style: TextStyle(
                     fontSize: 24,
@@ -51,7 +52,7 @@ class _SecuritySettingsPageState extends State<SecuritySettingsPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  TranslatableText(
                     'Credit Card',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -66,7 +67,7 @@ class _SecuritySettingsPageState extends State<SecuritySettingsPage> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          TranslatableText(
                             'Double Verification',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -74,7 +75,7 @@ class _SecuritySettingsPageState extends State<SecuritySettingsPage> {
                             ),
                           ),
                           h10,
-                          Text(
+                          TranslatableText(
                             'Enter CVV & OTP code for a swift & hassle-\nfree payment verification.',
                             style: TextStyle(
                               color: blackgrey,
@@ -107,7 +108,7 @@ class _SecuritySettingsPageState extends State<SecuritySettingsPage> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          TranslatableText(
                             'Single Verification',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -115,7 +116,7 @@ class _SecuritySettingsPageState extends State<SecuritySettingsPage> {
                             ),
                           ),
                           h10,
-                          Text(
+                          TranslatableText(
                             'Enter CVV & OTP code for a swift & hassle-\nfree payment verification.',
                             style: TextStyle(
                               color: blackgrey,
@@ -155,13 +156,13 @@ class _SecuritySettingsPageState extends State<SecuritySettingsPage> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          TranslatableText(
                             'Biometric',
                             style: TextStyle(
                                 fontWeight: FontWeight.bold, fontSize: 22),
                           ),
                           h20,
-                          Text(
+                          TranslatableText(
                             'Activate Biometric Feature',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -169,7 +170,7 @@ class _SecuritySettingsPageState extends State<SecuritySettingsPage> {
                             ),
                           ),
                           h10,
-                          Text(
+                          TranslatableText(
                             'To enjoy a seamless log in with fingerprint or\nface recognition',
                             style: TextStyle(
                               color: blackgrey,
@@ -208,13 +209,13 @@ class _SecuritySettingsPageState extends State<SecuritySettingsPage> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          TranslatableText(
                             'Device',
                             style: TextStyle(
                                 fontWeight: FontWeight.bold, fontSize: 22),
                           ),
                           h20,
-                          Text(
+                          TranslatableText(
                             'Set device as trusted',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -222,7 +223,7 @@ class _SecuritySettingsPageState extends State<SecuritySettingsPage> {
                             ),
                           ),
                           h10,
-                          Text(
+                          TranslatableText(
                             'Activate to set a Pin and Manage device\nconnectivity.',
                             style: TextStyle(
                               color: blackgrey,
@@ -254,7 +255,7 @@ class _SecuritySettingsPageState extends State<SecuritySettingsPage> {
             GestureDetector(
               onTap: () {
                 Get.defaultDialog(
-                  // confirm: Text(),
+                  // confirm: TranslatableText(),
                   titlePadding: EdgeInsets.only(top: 15),
                   contentPadding: EdgeInsets.all(15),
                   title: 'Check',
@@ -264,16 +265,14 @@ class _SecuritySettingsPageState extends State<SecuritySettingsPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        TranslatableText(
                           'Continue and set device as\ntrusted?',
-                          style: TextStyle(fontSize: 22),
-                          textAlign: TextAlign.start,
+                          style: TextStyle(fontSize: 22), 
                         ),
                         h10,
-                        Text(
+                        TranslatableText(
                           'To set a PIN, this device needs to be set as\ntrusted',
-                          style: TextStyle(color: blackgrey),
-                          textAlign: TextAlign.start,
+                          style: TextStyle(color: blackgrey), 
                         ),
                         h35,
                         Row(
@@ -283,7 +282,7 @@ class _SecuritySettingsPageState extends State<SecuritySettingsPage> {
                               onPressed: () {
                                 Get.back();
                               },
-                              child: Text(
+                              child: TranslatableText(
                                 'No, cancel',
                                 style: TextStyle(color: darkBlue),
                               ),
@@ -303,7 +302,7 @@ class _SecuritySettingsPageState extends State<SecuritySettingsPage> {
                               onPressed: () {
                                 Get.toNamed(Routes.settingPin);
                               },
-                              child: Text(
+                              child: TranslatableText(
                                 'Yes, continue',
                                 style: TextStyle(color: white),
                               ),
@@ -326,13 +325,13 @@ class _SecuritySettingsPageState extends State<SecuritySettingsPage> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              TranslatableText(
                                 'Pin',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 22),
                               ),
                               h20,
-                              Text(
+                              TranslatableText(
                                 'Set PIN',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -340,7 +339,7 @@ class _SecuritySettingsPageState extends State<SecuritySettingsPage> {
                                 ),
                               ),
                               h10,
-                              Text(
+                              TranslatableText(
                                 'Set a 6 digit verification PIN to secure your\naccounts activities',
                                 style: TextStyle(
                                   color: blackgrey,

@@ -2,6 +2,7 @@ import 'package:country_flags/country_flags.dart';
 import 'package:flight_booking_app/utils/buttons.dart';
 import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -35,7 +36,7 @@ class _ContactPersonDetailsPageState extends State<ContactPersonDetailsPage> {
               ),
             ),
             h20,
-            const Text(
+            const TranslatableText(
               'Contact Person Details',
               style: TextStyle(
                 fontSize: 24,
@@ -57,7 +58,7 @@ class _ContactPersonDetailsPageState extends State<ContactPersonDetailsPage> {
                         });
                       },
                     ),
-                    const Text("Male"),
+                    const TranslatableText("Male"),
                   ],
                 ),
                 w10,
@@ -73,7 +74,7 @@ class _ContactPersonDetailsPageState extends State<ContactPersonDetailsPage> {
                         });
                       },
                     ),
-                    const Text("Female"),
+                    const TranslatableText("Female"),
                   ],
                 ),
               ],
@@ -95,14 +96,14 @@ class _ContactPersonDetailsPageState extends State<ContactPersonDetailsPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    TranslatableText(
                       'Full name',
                       style: TextStyle(
                         fontSize: 16,
                         color: blackgrey,
                       ),
                     ),
-                    const Text(
+                    const TranslatableText(
                       'Cemrason Williamson',
                       style: TextStyle(
                         fontSize: 20,
@@ -129,14 +130,14 @@ class _ContactPersonDetailsPageState extends State<ContactPersonDetailsPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    TranslatableText(
                       'Email Address',
                       style: TextStyle(
                         fontSize: 16,
                         color: blackgrey,
                       ),
                     ),
-                    const Text(
+                    const TranslatableText(
                       'williamson@gmail.com',
                       style: TextStyle(
                         fontSize: 20,
@@ -166,7 +167,7 @@ class _ContactPersonDetailsPageState extends State<ContactPersonDetailsPage> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        TranslatableText(
                           'Country Code',
                           style: TextStyle(
                             fontSize: 16,
@@ -182,7 +183,7 @@ class _ContactPersonDetailsPageState extends State<ContactPersonDetailsPage> {
                               shape: const Rectangle(),
                             ),
                             w10,
-                            const Text(
+                            const TranslatableText(
                               '(+44)',
                               style: TextStyle(
                                 fontSize: 20,
@@ -218,14 +219,14 @@ class _ContactPersonDetailsPageState extends State<ContactPersonDetailsPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    TranslatableText(
                       'Phone number',
                       style: TextStyle(
                         fontSize: 16,
                         color: blackgrey,
                       ),
                     ),
-                    const Text(
+                    const TranslatableText(
                       '+998900777199',
                       style: TextStyle(
                         fontSize: 20,
@@ -252,14 +253,14 @@ class _ContactPersonDetailsPageState extends State<ContactPersonDetailsPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    TranslatableText(
                       'ID card number',
                       style: TextStyle(
                         fontSize: 16,
                         color: blackgrey,
                       ),
                     ),
-                    const Text(
+                    const TranslatableText(
                       '123456789012345',
                       style: TextStyle(
                         fontSize: 20,
@@ -270,7 +271,7 @@ class _ContactPersonDetailsPageState extends State<ContactPersonDetailsPage> {
               ),
             ),
             h10,
-            Text(
+            TranslatableText(
               'This contact is for e-ticket and refund/scheduling',
               style: TextStyle(
                 fontSize: 16,
@@ -281,7 +282,7 @@ class _ContactPersonDetailsPageState extends State<ContactPersonDetailsPage> {
             Button.gobutton(() {
               Get.back();
             },
-                Text(
+                TranslatableText(
                   'Save changes',
                   style: TextStyle(
                     color: white,

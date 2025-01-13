@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flight_booking_app/utils/buttons.dart';
 import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -39,7 +40,7 @@ class _DeletingAccountPageState extends State<DeletingAccountPage> {
             h10,
             Button.backbutton2(),
             h15,
-            Text(
+            TranslatableText(
               'Delete Account',
               style: TextStyle(
                 fontSize: 26,
@@ -56,12 +57,12 @@ class _DeletingAccountPageState extends State<DeletingAccountPage> {
               ],
             ),
             h10,
-            Text(
+            TranslatableText(
               'You sure you want\nto delete your account?',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
             ),
             h20,
-            Text(
+            TranslatableText(
               'If you delete your account:',
               style: TextStyle(
                 fontSize: 18,
@@ -75,11 +76,11 @@ class _DeletingAccountPageState extends State<DeletingAccountPage> {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      TranslatableText(
                         ' • Your remaining ticket Points',
                         style: TextStyle(fontSize: 12),
                       ),
-                      Text(
+                      TranslatableText(
                         ' cannot be used anymore.',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 12),
@@ -89,11 +90,11 @@ class _DeletingAccountPageState extends State<DeletingAccountPage> {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      TranslatableText(
                         ' • Your ticket Elite Rewards benefits',
                         style: TextStyle(fontSize: 12),
                       ),
-                      Text(
+                      TranslatableText(
                         ' will not be available anymore.',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 12),
@@ -103,11 +104,11 @@ class _DeletingAccountPageState extends State<DeletingAccountPage> {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      TranslatableText(
                         ' • All your pending rewards',
                         style: TextStyle(fontSize: 12),
                       ),
-                      Text(
+                      TranslatableText(
                         ' will be deleted.',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 12),
@@ -117,11 +118,11 @@ class _DeletingAccountPageState extends State<DeletingAccountPage> {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      TranslatableText(
                         ' • All rewards from using credit card',
                         style: TextStyle(fontSize: 12),
                       ),
-                      Text(
+                      TranslatableText(
                         ' can no longer be obtained',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 12),
@@ -147,7 +148,7 @@ class _DeletingAccountPageState extends State<DeletingAccountPage> {
                   },
                 ),
                 w5,
-                Text(
+                TranslatableText(
                   'I understand and accept all the above risks\nregarding my account deletion.',
                   style: TextStyle(color: blackgrey, fontSize: 14),
                 ),
@@ -173,7 +174,7 @@ class _DeletingAccountPageState extends State<DeletingAccountPage> {
                   borderRadius: BorderRadius.circular(15),
                   color: selectedOption == 1 ? darkBlue : Colors.blue[50],
                 ),
-                child: Text(
+                child: TranslatableText(
                   'Yes, continue',
                   style: TextStyle(color: white, fontSize: 22),
                 ),

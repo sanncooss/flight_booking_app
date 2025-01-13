@@ -2,6 +2,7 @@ import 'package:flight_booking_app/screens/core/routes.dart';
 import 'package:flight_booking_app/utils/buttons.dart';
 import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -47,21 +48,21 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                   w10,
                 ],
               ),
-              const Text(
+              const TranslatableText(
                 'Seach Flights',
                 style: TextStyle(
                   fontSize: 26,
                 ),
               ),
               h20,
-              const Text(
+              const TranslatableText(
                 'Contact Details',
                 style: TextStyle(
                   fontSize: 24,
                 ),
               ),
               h5,
-              Text(
+              TranslatableText(
                 '(For E-Ticket/Voucher)',
                 style: TextStyle(
                   fontSize: 18,
@@ -98,7 +99,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                 ),
                               ),
                               w15,
-                              const Text(
+                              const TranslatableText(
                                 'Matt Murdock',
                                 style: TextStyle(
                                   fontSize: 20,
@@ -110,7 +111,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                             onTap: () {
                               Get.toNamed(Routes.contactPersonDetails);
                             },
-                            child: Text(
+                            child: TranslatableText(
                               'Edit',
                               style: TextStyle(
                                 color: darkBlue,
@@ -145,7 +146,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                     size: 20,
                                   ),
                                   w5,
-                                  Text(
+                                  TranslatableText(
                                     'imnotdaredevil@mail.com',
                                     style: TextStyle(
                                         color: blackgrey, fontSize: 16),
@@ -160,7 +161,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                     size: 20,
                                   ),
                                   w5,
-                                  Text(
+                                  TranslatableText(
                                     '+628123223922',
                                     style: TextStyle(
                                         color: blackgrey, fontSize: 16),
@@ -176,7 +177,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                 ),
               ),
               h15,
-              const Text(
+              const TranslatableText(
                 'Passenger info',
                 style: TextStyle(fontSize: 20),
               ),
@@ -197,7 +198,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text(
+                      const TranslatableText(
                         'Same As Contact Details',
                         style: TextStyle(fontSize: 16),
                       ),
@@ -238,7 +239,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        const Text(
+                        const TranslatableText(
                           'Selena Kayle',
                           style: TextStyle(fontSize: 16),
                         ),
@@ -257,7 +258,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                 ),
               ),
               h10,
-              const Text(
+              const TranslatableText(
                 'Facility',
                 style: TextStyle(fontSize: 20),
               ),
@@ -296,14 +297,14 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    const Text(
+                                    const TranslatableText(
                                       'Add Baggage',
                                       style: TextStyle(
                                         fontSize: 28,
                                       ),
                                     ),
                                     h30,
-                                    const Text(
+                                    const TranslatableText(
                                       '1. Matt Murdock',
                                       style: TextStyle(
                                         fontSize: 20,
@@ -336,7 +337,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                                 mainAxisAlignment:
                                                     MainAxisAlignment.center,
                                                 children: [
-                                                  Text(
+                                                  TranslatableText(
                                                     '0 Kg',
                                                     style: TextStyle(
                                                       color: selectedIndex == 0
@@ -345,7 +346,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                                       fontSize: 28,
                                                     ),
                                                   ),
-                                                  Text(
+                                                  TranslatableText(
                                                     'Free',
                                                     style: TextStyle(
                                                       color: selectedIndex == 0
@@ -379,7 +380,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                                 mainAxisAlignment:
                                                     MainAxisAlignment.center,
                                                 children: [
-                                                  Text(
+                                                  TranslatableText(
                                                     '5 KG',
                                                     style: TextStyle(
                                                       color: selectedIndex == 1
@@ -388,7 +389,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                                       fontSize: 26,
                                                     ),
                                                   ),
-                                                  Text(
+                                                  TranslatableText(
                                                     'RP 210.000',
                                                     style: TextStyle(
                                                       color: selectedIndex == 1
@@ -422,7 +423,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                               mainAxisAlignment:
                                                   MainAxisAlignment.center,
                                               children: [
-                                                Text(
+                                                TranslatableText(
                                                   '10 KG',
                                                   style: TextStyle(
                                                     color: selectedIndex == 2
@@ -431,7 +432,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                                     fontSize: 26,
                                                   ),
                                                 ),
-                                                Text(
+                                                TranslatableText(
                                                   'RP 510.000',
                                                   style: TextStyle(
                                                     color: selectedIndex == 2
@@ -467,14 +468,14 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                                   MainAxisAlignment
                                                       .spaceBetween,
                                               children: [
-                                                Text(
+                                                TranslatableText(
                                                   '1. Matt Murdock',
                                                   style: TextStyle(
                                                     color: blackgrey,
                                                     fontSize: 16,
                                                   ),
                                                 ),
-                                                Text(
+                                                TranslatableText(
                                                   'Rp. 210.000',
                                                   style: TextStyle(
                                                     color: blackgrey,
@@ -489,14 +490,14 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                                   MainAxisAlignment
                                                       .spaceBetween,
                                               children: [
-                                                Text(
+                                                TranslatableText(
                                                   'Total',
                                                   style: TextStyle(
                                                     color: blackgrey,
                                                     fontSize: 16,
                                                   ),
                                                 ),
-                                                const Text(
+                                                const TranslatableText(
                                                   'Rp. 210.000',
                                                   style: TextStyle(
                                                     fontSize: 16,
@@ -523,7 +524,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                             size: 26,
                                           ),
                                           w10,
-                                          Text(
+                                          TranslatableText(
                                             'Add Bagagge',
                                             style: TextStyle(
                                                 color: white, fontSize: 20),
@@ -560,13 +561,13 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const Text(
+                            const TranslatableText(
                               'Baggage',
                               style: TextStyle(
                                 fontSize: 16,
                               ),
                             ),
-                            Text(
+                            TranslatableText(
                               'Add Extra baggage',
                               style: TextStyle(fontSize: 16, color: blackgrey),
                             )
@@ -583,7 +584,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                 ),
               ),
               h15,
-              const Text(
+              const TranslatableText(
                 'Extra Protection',
                 style: TextStyle(fontSize: 20),
               ),
@@ -613,7 +614,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                 size: 28,
                               ),
                               w10,
-                              const Text(
+                              const TranslatableText(
                                 'Travel Insurance',
                                 style: TextStyle(
                                   fontSize: 18,
@@ -621,7 +622,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                               )
                             ],
                           ),
-                          const Text(
+                          const TranslatableText(
                             '\$125',
                             style: TextStyle(fontSize: 28),
                           ),
@@ -640,7 +641,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                   color: darkBlue,
                                 ),
                                 w5,
-                                Text(
+                                TranslatableText(
                                   'Coverage for accidents up to \$10000',
                                   style: TextStyle(
                                     color: blackgrey,
@@ -659,7 +660,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                   color: darkBlue,
                                 ),
                                 w5,
-                                Text(
+                                TranslatableText(
                                   'Coverage for trip cancellation by passengers\nup to \$1250',
                                   style: TextStyle(
                                     color: blackgrey,
@@ -687,7 +688,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                 color: darkBlue,
                               ),
                               w10,
-                              const Text(
+                              const TranslatableText(
                                 'Add Insurance',
                                 style: TextStyle(fontSize: 22),
                               )
@@ -711,7 +712,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                       children: [
                         Row(
                           children: [
-                            Text(
+                            TranslatableText(
                               'Subtotal',
                               style: TextStyle(
                                 color: blackgrey,
@@ -725,7 +726,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                             ),
                           ],
                         ),
-                        const Text(
+                        const TranslatableText(
                           '\$132',
                           style: TextStyle(fontSize: 28),
                         )
@@ -745,7 +746,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(
+                            TranslatableText(
                               'Select Seat',
                               style: TextStyle(fontSize: 22, color: white),
                             ),

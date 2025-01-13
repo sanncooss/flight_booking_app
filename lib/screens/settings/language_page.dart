@@ -1,6 +1,8 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flight_booking_app/utils/buttons.dart';
 import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/material.dart';
 
 class LanguagePage extends StatefulWidget {
@@ -23,7 +25,7 @@ class _LanguagePageState extends State<LanguagePage> {
             h10,
             Button.backbutton2(),
             h15,
-            Text(
+            TranslatableText(
               'Language',
               style: TextStyle(
                 fontSize: 28,
@@ -31,43 +33,48 @@ class _LanguagePageState extends State<LanguagePage> {
               ),
             ),
             h25,
-            Text(
+            TranslatableText(
               'Language',
               style: TextStyle(
                 fontSize: 20  ,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Container(
-              width: double.infinity,
-              height: 60,
-              decoration: BoxDecoration(
-                  border: Border(
-                      bottom: BorderSide(
-                color: greyish,
-                width: 1,
-              ))),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'English',
-                    style: TextStyle(
-                      fontSize: 20,
+            GestureDetector(
+              onTap: () {
+
+              },
+              child: Container(
+                width: double.infinity,
+                height: 60,
+                decoration: BoxDecoration(
+                    border: Border(
+                        bottom: BorderSide(
+                  color: greyish,
+                  width: 1,
+                ))),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    TranslatableText(
+                      'English',
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
                     ),
-                  ),
-                  Radio(
-                    activeColor: darkBlue,
-                    value: 1,
-                    splashRadius: 10,
-                    groupValue: selectedOption,
-                    onChanged: (value) {
-                      setState(() {
-                        selectedOption = value;
-                      });
-                    },
-                  ),
-                ],
+                    Radio(
+                      activeColor: darkBlue,
+                      value: 1,
+                      splashRadius: 10,
+                      groupValue: selectedOption,
+                      onChanged: (value) {
+                        setState(() {
+                          selectedOption = value;
+                        });
+                      },
+                    ),
+                  ],
+                ),
               ),
             ),
             Container(
@@ -82,7 +89,7 @@ class _LanguagePageState extends State<LanguagePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  TranslatableText(
                     'Uzbek',
                     style: TextStyle(
                       fontSize: 20,
@@ -114,7 +121,7 @@ class _LanguagePageState extends State<LanguagePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  TranslatableText(
                     'Russian',
                     style: TextStyle(
                       fontSize: 20,

@@ -2,6 +2,7 @@ import 'package:flight_booking_app/screens/core/routes.dart';
 import 'package:flight_booking_app/utils/buttons.dart';
 import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -36,7 +37,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
               h10,
               Button.backbutton2(),
               h15,
-              Text(
+              TranslatableText(
                 'Notifications Settings',
                 style: TextStyle(
                   fontSize: 26,
@@ -44,14 +45,14 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                 ),
               ),
               h20,
-              Text(
+              TranslatableText(
                 'Push notification disabled',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               h15,
               Row(
                 children: [
-                  Text(
+                  TranslatableText(
                     'To enable notifications, go to ',
                     style: TextStyle(color: blackgrey),
                   ),
@@ -59,7 +60,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                     onTap: () {
                       Get.toNamed(Routes.settings);
                     },
-                    child: Text(
+                    child: TranslatableText(
                       'Settings',
                       style: TextStyle(color: darkBlue),
                     ),
@@ -67,14 +68,14 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                 ],
               ),
               h20,
-              Text(
+              TranslatableText(
                 'Activity',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
                 ),
               ),
-              Text(
+              TranslatableText(
                 'Secure your account by keeping your log in, \nregister, and OTP acitvity on track.',
                 style: TextStyle(color: blackgrey),
               ),
@@ -88,7 +89,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    TranslatableText(
                       'Email',
                       style: TextStyle(
                         color: blackish,
@@ -115,7 +116,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    TranslatableText(
                       'Push Notifications',
                       style: TextStyle(
                         color: blackish,
@@ -136,14 +137,14 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                   ],
                 ),
               ),
-              Text(
+              TranslatableText(
                 'Special For You',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 24,
                 ),
               ),
-              Text(
+              TranslatableText(
                 'You can never have too much of limited-time\ndiscount, exlucive offers, tips and info new\nfeature.',
                 style: TextStyle(
                   color: blackgrey,
@@ -159,7 +160,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    TranslatableText(
                       'Email',
                       style: TextStyle(
                         color: blackish,
@@ -186,7 +187,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    TranslatableText(
                       'Push Notifications',
                       style: TextStyle(
                         color: blackish,
@@ -207,14 +208,14 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                   ],
                 ),
               ),
-              Text(
+              TranslatableText(
                 'Reminders',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 24,
                 ),
               ),
-              Text(
+              TranslatableText(
                 'Get important travel news and info, payment\nreminders, check-in reminder and more.',
                 style: TextStyle(
                   color: blackgrey,
@@ -230,7 +231,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    TranslatableText(
                       'Email',
                       style: TextStyle(
                         color: blackish,
@@ -257,7 +258,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    TranslatableText(
                       'Push Notifications',
                       style: TextStyle(
                         color: blackish,
@@ -278,14 +279,14 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                   ],
                 ),
               ),
-              Text(
+              TranslatableText(
                 'Membership',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 24,
                 ),
               ),
-              Text(
+              TranslatableText(
                 'You will get emails about ticket Elite Rewards and\nsurveys',
                 style: TextStyle(
                   color: blackgrey,
@@ -301,7 +302,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    TranslatableText(
                       'Email',
                       style: TextStyle(
                         color: blackish,
@@ -328,7 +329,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    TranslatableText(
                       'Push Notifications',
                       style: TextStyle(
                         color: blackish,

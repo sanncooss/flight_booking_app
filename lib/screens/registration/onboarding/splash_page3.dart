@@ -1,6 +1,7 @@
 import 'package:flight_booking_app/screens/core/routes.dart';
 import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -58,7 +59,7 @@ class SplashPage3 extends StatelessWidget {
               ),
             ),
             h5,
-            Text(
+            TranslatableText(
               'Book\nAppointment\nin Easiest Way!',
               style: GoogleFonts.inter(
                 fontWeight: FontWeight.bold,
@@ -77,7 +78,7 @@ class SplashPage3 extends StatelessWidget {
                     width: 190,
                     height: 60,
                     alignment: Alignment.center,
-                    child: Text(
+                    child: TranslatableText(
                       'Skip',
                       style: GoogleFonts.inter(
                         fontSize: 18,
@@ -103,7 +104,7 @@ class SplashPage3 extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        TranslatableText(
                           'Get started',
                           style: GoogleFonts.inter(fontSize: 18, color: white),
                         ),

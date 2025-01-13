@@ -1,6 +1,7 @@
 import 'package:calendar_date_picker2/calendar_date_picker2.dart';
 import 'package:flight_booking_app/screens/core/routes.dart';
 import 'package:flight_booking_app/utils/buttons.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flight_booking_app/utils/colors.dart';
@@ -54,7 +55,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                         color: white,
                       ),
                     ),
-                    Text(
+                    TranslatableText(
                       'Search Flights',
                       style: TextStyle(
                         fontSize: 24,
@@ -64,7 +65,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                     const SizedBox(width: 40),
                   ],
                 ),
-                Text(
+                TranslatableText(
                   'Discover\na new world',
                   style: TextStyle(
                     fontSize: 38,
@@ -107,7 +108,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                                 });
                               },
                             ),
-                            const Text("One-way"),
+                            const TranslatableText("One-way"),
                           ],
                         ),
                         w10,
@@ -123,13 +124,13 @@ class _DiscoverPageState extends State<DiscoverPage> {
                                 });
                               },
                             ),
-                            const Text("Round Trip"),
+                            const TranslatableText("Round Trip"),
                           ],
                         ),
                       ],
                     ),
                     h10,
-                    const Text(
+                    const TranslatableText(
                       'From',
                       style: TextStyle(
                         fontSize: 16,
@@ -155,7 +156,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                             size: 26,
                           ),
                           w10,
-                          const Text(
+                          const TranslatableText(
                             'New York, USA',
                             style: TextStyle(
                               fontSize: 18,
@@ -168,7 +169,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Text(
+                        const TranslatableText(
                           'To',
                           style: TextStyle(
                             fontSize: 16,
@@ -201,7 +202,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                             size: 26,
                           ),
                           w10,
-                          const Text(
+                          const TranslatableText(
                             'NDa Nang, Vietnam',
                             style: TextStyle(
                               fontSize: 18,
@@ -211,7 +212,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                       ),
                     ),
                     h10,
-                    const Text(
+                    const TranslatableText(
                       'Departure Date',
                       style: TextStyle(
                         fontSize: 16,
@@ -247,13 +248,13 @@ class _DiscoverPageState extends State<DiscoverPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    const Text(
+                                    const TranslatableText(
                                       'Sellect Date',
                                       style: TextStyle(
                                         fontSize: 28,
                                       ),
                                     ),
-                                    Text(
+                                    TranslatableText(
                                       DateFormat('yyyy-MM-dd')
                                           .format(DateTime.now()),
                                       style: TextStyle(
@@ -301,7 +302,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                                     Button.gobutton(() {
                                       Get.toNamed(Routes.flightList);
                                     },
-                                        Text(
+                                        TranslatableText(
                                           'Search date',
                                           style: TextStyle(
                                             fontSize: 20,
@@ -325,7 +326,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                               size: 26,
                             ),
                             w10,
-                            const Text(
+                            const TranslatableText(
                               'August 28, 2021',
                               style: TextStyle(
                                 fontSize: 18,
@@ -336,7 +337,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                       ),
                     ),
                     h10,
-                    const Text(
+                    const TranslatableText(
                       'Travelers',
                       style: TextStyle(
                         fontSize: 16,
@@ -362,7 +363,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                             size: 26,
                           ),
                           w10,
-                          const Text(
+                          const TranslatableText(
                             '1 Adult, 1 child, 0 Infant',
                             style: TextStyle(
                               fontSize: 18,
@@ -378,7 +379,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                           Routes.flightList,
                         );
                       },
-                      Text(
+                      TranslatableText(
                         'Search flights',
                         style: TextStyle(fontSize: 20, color: white),
                       ),

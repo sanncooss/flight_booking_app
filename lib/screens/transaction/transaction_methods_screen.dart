@@ -1,6 +1,7 @@
 import 'package:flight_booking_app/screens/core/routes.dart';
 import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -33,12 +34,12 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                 ),
               ),
               h25,
-              Text(
+              TranslatableText(
                 'Digital Payment Method(s)',
                 style: TextStyle(fontSize: 26, fontWeight: FontWeight.w600),
               ),
               h10,
-              Text(
+              TranslatableText(
                 'Swipe left to set your default method',
                 style: TextStyle(
                   color: blackgrey,
@@ -62,7 +63,7 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          TranslatableText(
                             '****9876',
                             style: TextStyle(
                               fontSize: 18,
@@ -76,7 +77,7 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                                 width: 18,
                               ),
                               w5,
-                              Text(
+                              TranslatableText(
                                 'Get 10\$ Discount',
                                 style: TextStyle(
                                   color: grey,
@@ -122,7 +123,7 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          TranslatableText(
                             '****9876',
                             style: TextStyle(
                               fontSize: 18,
@@ -136,7 +137,7 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                                 width: 18,
                               ),
                               w5,
-                              Text(
+                              TranslatableText(
                                 'Get 10\$ Discount',
                                 style: TextStyle(
                                   color: grey,
@@ -162,7 +163,7 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                 ],
               ),
               h15,
-              Text(
+              TranslatableText(
                 'Add Methods',
                 style: TextStyle(
                   fontSize: 24,
@@ -186,14 +187,14 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          TranslatableText(
                             'Credit or debit card',
                             style: TextStyle(
                               fontSize: 18,
                             ),
                           ),
                           h10,
-                          Text(
+                          TranslatableText(
                             'Visa, Mastercard, AMEX and JCB',
                             style: TextStyle(fontSize: 16, color: blackgrey),
                           ),
@@ -205,7 +206,7 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                                 width: 18,
                               ),
                               w5,
-                              Text(
+                              TranslatableText(
                                 'Get 10\$ Discount',
                                 style: TextStyle(
                                   color: grey,
@@ -218,7 +219,7 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                       )
                     ],
                   ),
-                  Text(
+                  TranslatableText(
                     'Add',
                     style:
                         TextStyle(color: darkBlue, fontWeight: FontWeight.bold),
@@ -246,14 +247,14 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          TranslatableText(
                             'Transfer',
                             style: TextStyle(
                               fontSize: 18,
                             ),
                           ),
                           h10,
-                          Text(
+                          TranslatableText(
                             'Transferring via ATM, Internet \nBanking & Mobile Banking',
                             style: TextStyle(fontSize: 16, color: blackgrey),
                           ),
@@ -265,7 +266,7 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                                 width: 18,
                               ),
                               w5,
-                              Text(
+                              TranslatableText(
                                 'Get 10\$ Discount',
                                 style: TextStyle(
                                   color: grey,
@@ -278,7 +279,7 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                       )
                     ],
                   ),
-                  Text(
+                  TranslatableText(
                     'Add',
                     style:
                         TextStyle(color: darkBlue, fontWeight: FontWeight.bold),
@@ -299,7 +300,7 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                       children: [
                         Row(
                           children: [
-                            Text(
+                            TranslatableText(
                               'Subtotal',
                               style: TextStyle(
                                 color: blackgrey,
@@ -313,7 +314,7 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                             ),
                           ],
                         ),
-                        const Text(
+                        const TranslatableText(
                           '\$132',
                           style: TextStyle(fontSize: 28),
                         )
@@ -350,7 +351,7 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: [
-                                        Text(
+                                        TranslatableText(
                                           'Continue with Touch ID to\n    Proceed the payment',
                                           style: TextStyle(
                                             fontSize: 25,
@@ -405,7 +406,7 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                                                               MainAxisAlignment
                                                                   .center,
                                                           children: [
-                                                            Text(
+                                                            TranslatableText(
                                                               'Continue with Face ID to\n    Proceed the payment',
                                                               style: TextStyle(
                                                                 fontSize: 25,
@@ -437,7 +438,7 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                                                                     borderRadius:
                                                                         BorderRadius.all(
                                                                             Radius.circular(15))),
-                                                                child: Text(
+                                                                child: TranslatableText(
                                                                   'Use Passcode Instead',
                                                                   style:
                                                                       TextStyle(
@@ -465,7 +466,7 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                                                 color: greyish,
                                                 borderRadius: BorderRadius.all(
                                                     Radius.circular(15))),
-                                            child: Text(
+                                            child: TranslatableText(
                                               'Use Passcode Instead',
                                               style: TextStyle(
                                                 fontSize: 18,
@@ -491,7 +492,7 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(
+                            TranslatableText(
                               'Proceed The Payment',
                               style: TextStyle(fontSize: 20, color: white),
                             ),

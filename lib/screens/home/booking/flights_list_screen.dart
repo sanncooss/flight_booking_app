@@ -1,6 +1,7 @@
 import 'package:flight_booking_app/screens/core/routes.dart';
 import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flight_booking_app/widget/flight_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -36,10 +37,10 @@ class FlightsListScreen extends StatelessWidget {
                 //         BoxDecoration(borderRadius: BorderRadius.circular(25)),
                 //     firstChild: Column(
                 //       children: [
-                //         Text('hell nah'),
+                //         TranslatableText('hell nah'),
                 //       ],
                 //     ),
-                //     secondChild: Text('Hell yeah')),
+                //     secondChild: TranslatableText('Hell yeah')),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -53,7 +54,7 @@ class FlightsListScreen extends StatelessWidget {
                         size: 36,
                       ),
                     ),
-                    Text(
+                    TranslatableText(
                       'Search Flights',
                       style: TextStyle(color: white, fontSize: 26),
                     ),

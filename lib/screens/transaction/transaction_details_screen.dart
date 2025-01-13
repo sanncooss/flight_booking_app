@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flight_booking_app/screens/core/routes.dart';
 import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -26,7 +27,7 @@ class TransactionDetailsScreen extends StatelessWidget {
                 ),
               ),
               h15,
-              Text(
+              TranslatableText(
                 'Transaction Details',
                 style: TextStyle(fontSize: 26),
               ),
@@ -53,7 +54,7 @@ class TransactionDetailsScreen extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(5)),
                                 ),
                                 w10,
-                                Text(
+                                TranslatableText(
                                   'Southwest Airlines',
                                   style: TextStyle(
                                     fontSize: 18,
@@ -62,7 +63,7 @@ class TransactionDetailsScreen extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            Text(
+                            TranslatableText(
                               'Executive',
                               style: TextStyle(color: blackgrey),
                             )
@@ -75,14 +76,14 @@ class TransactionDetailsScreen extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
+                                TranslatableText(
                                   'GTH',
                                   style: TextStyle(
                                     fontSize: 24,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                Text(
+                                TranslatableText(
                                   '14.00',
                                   style:
                                       TextStyle(color: blackgrey, fontSize: 14),
@@ -109,14 +110,14 @@ class TransactionDetailsScreen extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
+                                TranslatableText(
                                   'KHQ',
                                   style: TextStyle(
                                     fontSize: 24,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                Text(
+                                TranslatableText(
                                   '07.15',
                                   style:
                                       TextStyle(color: blackgrey, fontSize: 14),
@@ -139,7 +140,7 @@ class TransactionDetailsScreen extends StatelessWidget {
                                       color: darkBlue,
                                     ),
                                     w5,
-                                    Text(
+                                    TranslatableText(
                                       '2 Person',
                                       style: TextStyle(fontSize: 14),
                                     )
@@ -154,7 +155,7 @@ class TransactionDetailsScreen extends StatelessWidget {
                                       color: darkBlue,
                                     ),
                                     // w5,/
-                                    Text(
+                                    TranslatableText(
                                       'Premium',
                                       style: TextStyle(fontSize: 14),
                                     )
@@ -164,8 +165,8 @@ class TransactionDetailsScreen extends StatelessWidget {
                             ),
                             Row(
                               children: [
-                                Text('IDR 350.000'),
-                                Text(
+                                TranslatableText('IDR 350.000'),
+                                TranslatableText(
                                   '/Pax',
                                   style: TextStyle(
                                     color: grey,
@@ -187,7 +188,7 @@ class TransactionDetailsScreen extends StatelessWidget {
                                       AssetImage('assets/images/hero2.png'),
                                 ),
                                 w10,
-                                Text(
+                                TranslatableText(
                                   'Matt Murdock',
                                   style: TextStyle(
                                     fontSize: 18,
@@ -196,7 +197,7 @@ class TransactionDetailsScreen extends StatelessWidget {
                                 )
                               ],
                             ),
-                            Text(
+                            TranslatableText(
                               'Edit',
                               style: TextStyle(
                                 color: darkBlue,
@@ -221,11 +222,11 @@ class TransactionDetailsScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        TranslatableText(
                           'Status',
                           style: TextStyle(color: blackgrey, fontSize: 16),
                         ),
-                        Text(
+                        TranslatableText(
                           'Success',
                           style: TextStyle(
                             color: darkBlue,
@@ -238,11 +239,11 @@ class TransactionDetailsScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        TranslatableText(
                           'Invoice',
                           style: TextStyle(color: blackgrey, fontSize: 16),
                         ),
-                        Text(
+                        TranslatableText(
                           'INV1234567',
                           style: TextStyle(
                             fontSize: 16,
@@ -254,11 +255,11 @@ class TransactionDetailsScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        TranslatableText(
                           'Transaction Date',
                           style: TextStyle(color: blackgrey, fontSize: 16),
                         ),
-                        Text(
+                        TranslatableText(
                           'Wed, 18 OCT 2022',
                           style: TextStyle(
                             fontSize: 16,
@@ -270,11 +271,11 @@ class TransactionDetailsScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        TranslatableText(
                           'Payment Method',
                           style: TextStyle(color: blackgrey, fontSize: 16),
                         ),
-                        Text(
+                        TranslatableText(
                           'Paytren',
                           style: TextStyle(
                             fontSize: 16,
@@ -301,7 +302,7 @@ class TransactionDetailsScreen extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          TranslatableText(
                             '1. Matt Murdock',
                             style: TextStyle(
                               color: blackgrey,
@@ -309,7 +310,7 @@ class TransactionDetailsScreen extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Text(
+                          TranslatableText(
                             'RP. 210.000',
                             style: TextStyle(
                               color: blackgrey,
@@ -322,7 +323,7 @@ class TransactionDetailsScreen extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          TranslatableText(
                             '1. Matt Murdock',
                             style: TextStyle(
                               color: blackgrey,
@@ -330,7 +331,7 @@ class TransactionDetailsScreen extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Text(
+                          TranslatableText(
                             'RP. 210.000',
                             style: TextStyle(
                               fontSize: 16,
@@ -357,7 +358,7 @@ class TransactionDetailsScreen extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      TranslatableText(
                         'Refund or reschedule ticket',
                         style: TextStyle(
                           color: red,

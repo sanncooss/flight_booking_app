@@ -1,5 +1,6 @@
 import 'package:flight_booking_app/screens/core/routes.dart';
 import 'package:flight_booking_app/screens/registration/singin/password_screen.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -28,14 +29,14 @@ class _LoginScreenState extends State<LoginScreen> {
             h15,
             Button.backbutton(),
             h20,
-            Text(
+            TranslatableText(
               'Sign up',
               style: GoogleFonts.inter(
                 fontSize: 46,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Text(
+            TranslatableText(
               'Start Your Journey with affordable price',
               style: GoogleFonts.inter(
                 fontSize: 16,
@@ -44,7 +45,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             h35,
             Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text(
+              TranslatableText(
                 'EMAIL',
                 style: TextStyle(
                   color: grey,
@@ -78,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    TranslatableText(
                       'Next',
                       style: GoogleFonts.inter(
                         fontSize: 18,
@@ -97,7 +98,7 @@ class _LoginScreenState extends State<LoginScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  TranslatableText(
                     'Don\'t have an account?',
                     style: GoogleFonts.inter(fontSize: 16, color: grey),
                   ),
@@ -106,7 +107,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     onTap: () {
                       Get.toNamed(Routes.signup);
                     },
-                    child: Text(
+                    child: TranslatableText(
                       'Sign up',
                       style: GoogleFonts.inter(fontSize: 16, color: blue),
                     ),

@@ -2,6 +2,7 @@ import 'package:flight_booking_app/screens/core/routes.dart';
 import 'package:flight_booking_app/utils/buttons.dart';
 import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -28,7 +29,7 @@ class _SettingsPageState extends State<SettingsPage> {
               h15,
               Button.backbutton2(),
               h15,
-              Text(
+              TranslatableText(
                 'Settings',
                 style: TextStyle(
                   fontSize: 26,
@@ -36,7 +37,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 ),
               ),
               h15,
-              Text(
+              TranslatableText(
                 'General',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
@@ -55,7 +56,7 @@ class _SettingsPageState extends State<SettingsPage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
+                            TranslatableText(
                               'Language',
                               style: TextStyle(color: blackish, fontSize: 16),
                             ),
@@ -81,7 +82,7 @@ class _SettingsPageState extends State<SettingsPage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
+                            TranslatableText(
                               'Notification Settings',
                               style: TextStyle(color: blackish, fontSize: 16),
                             ),
@@ -100,7 +101,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        TranslatableText(
                           'Location',
                           style: TextStyle(color: blackish, fontSize: 16),
                         ),
@@ -121,7 +122,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   h10,
                 ],
               ),
-              Text(
+              TranslatableText(
                 'Account & Privacy',
                 style: TextStyle(
                   fontSize: 22,
@@ -140,7 +141,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        TranslatableText(
                           'Email and Mobile Number',
                           style: TextStyle(color: blackish, fontSize: 16),
                         ),
@@ -166,7 +167,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        TranslatableText(
                           'Security settings',
                           style: TextStyle(color: blackish, fontSize: 16),
                         ),
@@ -189,7 +190,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      TranslatableText(
                         'Delete Account',
                         style: TextStyle(color: blackish, fontSize: 16),
                       ),
@@ -203,7 +204,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 ),
               ),
               h10,
-              Text(
+              TranslatableText(
                 'Other',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -219,7 +220,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      TranslatableText(
                         'About Indochina Travel App',
                         style: TextStyle(color: blackish, fontSize: 16),
                       ),
@@ -240,7 +241,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      TranslatableText(
                         'Privacy Policy',
                         style: TextStyle(color: blackish, fontSize: 16),
                       ),
@@ -261,7 +262,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      TranslatableText(
                         'Terms and Conditions',
                         style: TextStyle(color: blackish, fontSize: 16),
                       ),
@@ -282,11 +283,11 @@ class _SettingsPageState extends State<SettingsPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      TranslatableText(
                         'Rate App',
                         style: TextStyle(color: blackish, fontSize: 16),
                       ),
-                      Text(
+                      TranslatableText(
                         'v4.87.2',
                         style: TextStyle(color: blackgrey, fontSize: 16),
                       )

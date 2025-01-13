@@ -2,6 +2,7 @@ import 'package:flight_booking_app/screens/core/routes.dart';
 import 'package:flight_booking_app/utils/buttons.dart';
 import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:slide_to_act/slide_to_act.dart';
@@ -130,12 +131,12 @@ class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
 
                     // crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
+                      const TranslatableText(
                         'Double check your \nBookings',
                         style: TextStyle(fontSize: 27),
                       ),
                       h5,
-                      Text(
+                      TranslatableText(
                         'Please before you proceed to payment, make sure your\ndata is correct.',
                         style: TextStyle(color: blackgrey, fontSize: 14),
                       ),
@@ -158,14 +159,14 @@ class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text(
+                                  TranslatableText(
                                     '1. Matt Murdock',
                                     style: TextStyle(
                                       color: blackgrey,
                                       fontSize: 16,
                                     ),
                                   ),
-                                  Text(
+                                  TranslatableText(
                                     'Rp. 210.000',
                                     style: TextStyle(
                                       color: blackgrey,
@@ -179,14 +180,14 @@ class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text(
+                                  TranslatableText(
                                     'Total',
                                     style: TextStyle(
                                       color: blackgrey,
                                       fontSize: 16,
                                     ),
                                   ),
-                                  const Text(
+                                  const TranslatableText(
                                     'Rp. 210.000',
                                     style: TextStyle(
                                       fontSize: 16,
@@ -202,7 +203,7 @@ class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
                       Button.gobutton(() {
                         Get.toNamed(Routes.mainRoutePage);
                       },
-                          Text(
+                          TranslatableText(
                             'Save changes',
                             style: TextStyle(
                               color: white,
@@ -240,7 +241,7 @@ class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
                 ),
               ),
               h20,
-              Text(
+              TranslatableText(
                 'Passenger Info',
                 style: TextStyle(fontSize: 24),
               ),
@@ -251,20 +252,20 @@ class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      TranslatableText(
                         'Wed, OCT 26 2022',
                         style: TextStyle(
                           color: blackgrey,
                           fontSize: 14,
                         ),
                       ),
-                      Text(
+                      TranslatableText(
                         'New York, USA',
                         style: TextStyle(
                           fontSize: 15,
                         ),
                       ),
-                      Text(
+                      TranslatableText(
                         '(LGA)',
                         style: TextStyle(
                           color: blackgrey,
@@ -292,20 +293,20 @@ class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
-                      Text(
+                      TranslatableText(
                         '9:37 PM',
                         style: TextStyle(
                           color: blackgrey,
                           fontSize: 14,
                         ),
                       ),
-                      Text(
+                      TranslatableText(
                         'Danang, VIE',
                         style: TextStyle(
                           fontSize: 15,
                         ),
                       ),
-                      Text(
+                      TranslatableText(
                         '(DAD)',
                         style: TextStyle(
                           color: blackgrey,
@@ -320,12 +321,12 @@ class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
               const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Text("A"),
-                    Text("B"),
-                    Text("C"),
-                    Text("D"),
-                    Text("E"),
-                    Text("F"),
+                    TranslatableText("A"),
+                    TranslatableText("B"),
+                    TranslatableText("C"),
+                    TranslatableText("D"),
+                    TranslatableText("E"),
+                    TranslatableText("F"),
                   ]),
               h15,
               SizedBox(
@@ -423,7 +424,7 @@ class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
                 ),
               ),
               h15,
-              Text(
+              TranslatableText(
                 'Selected Seat:',
                 style: TextStyle(color: black, fontSize: 18),
               ),
@@ -447,7 +448,7 @@ class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
                           Icons.person,
                           color: white,
                         ),
-                        Text(
+                        TranslatableText(
                           '#1 5A',
                           style: TextStyle(color: white, fontSize: 14),
                         )
@@ -519,7 +520,7 @@ class LegendItem extends StatelessWidget {
           child: icon,
         ),
         SizedBox(width: 8),
-        Text(
+        TranslatableText(
           label,
           style: labelStyle,
         ),

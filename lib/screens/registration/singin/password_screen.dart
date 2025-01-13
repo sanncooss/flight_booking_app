@@ -3,6 +3,7 @@ import 'package:flight_booking_app/screens/core/routes.dart';
 import 'package:flight_booking_app/utils/buttons.dart';
 import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -49,12 +50,12 @@ class PasswordPage extends StatelessWidget {
             h15,
             Button.backbutton(),
             h20,
-            Text(
+            TranslatableText(
               'Password',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35),
             ),
             h30,
-            Text(
+            TranslatableText(
               'Password:',
               style: TextStyle(color: grey),
             ),
@@ -81,7 +82,7 @@ class PasswordPage extends StatelessWidget {
                 loginUser(email, password);
               }
             },
-                Text(
+                TranslatableText(
                   'Login',
                   style: TextStyle(color: white, fontSize: 24),
                 )),

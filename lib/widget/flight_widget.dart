@@ -2,6 +2,7 @@ import 'package:coupon_uikit/coupon_uikit.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/material.dart';
 
 class FlightWidget extends StatelessWidget {
@@ -29,12 +30,12 @@ class FlightWidget extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
+                      const TranslatableText(
                         'LGA',
                         style: TextStyle(
                             fontSize: 24, fontWeight: FontWeight.bold),
                       ),
-                      Text(
+                      TranslatableText(
                         'New York',
                         style: TextStyle(
                           fontSize: 20,
@@ -53,7 +54,7 @@ class FlightWidget extends StatelessWidget {
                         height: 30,
                         fit: BoxFit.fill,
                       ),
-                      const Text(
+                      const TranslatableText(
                         '23:00 hours',
                         style: TextStyle(
                           fontSize: 20,
@@ -64,12 +65,12 @@ class FlightWidget extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
-                      const Text(
+                      const TranslatableText(
                         'DAD',
                         style: TextStyle(
                             fontSize: 24, fontWeight: FontWeight.bold),
                       ),
-                      Text(
+                      TranslatableText(
                         'Da Nang',
                         style: TextStyle(
                           fontSize: 20,
@@ -87,12 +88,12 @@ class FlightWidget extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
+                      const TranslatableText(
                         '8:00 AM',
                         style: TextStyle(
                             fontSize: 24, fontWeight: FontWeight.bold),
                       ),
-                      Text(
+                      TranslatableText(
                         'August 28, 2021',
                         style: TextStyle(
                           fontSize: 20,
@@ -111,12 +112,12 @@ class FlightWidget extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
-                      const Text(
+                      const TranslatableText(
                         '7:00 AM',
                         style: TextStyle(
                             fontSize: 24, fontWeight: FontWeight.bold),
                       ),
-                      Text(
+                      TranslatableText(
                         'August 29, 2021',
                         style: TextStyle(
                           fontSize: 20,
@@ -158,13 +159,13 @@ class FlightWidget extends StatelessWidget {
                         height: 55,
                       ),
                       w5,
-                      Text(
+                      TranslatableText(
                         'Qatar Airway',
                         style: TextStyle(color: blackgrey, fontSize: 20),
                       ),
                     ],
                   ),
-                  Text(
+                  TranslatableText(
                     '\$350',
                     style: TextStyle(color: black, fontSize: 24),
                   ),

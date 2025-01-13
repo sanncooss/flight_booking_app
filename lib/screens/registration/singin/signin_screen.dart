@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flight_booking_app/screens/core/routes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -89,14 +90,14 @@ class _SigninScreenState extends State<SigninScreen> {
             h15,
             Button.backbutton(),
             h20,
-            Text(
+            TranslatableText(
               'Sign up',
               style: GoogleFonts.inter(
                 fontSize: 46,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Text(
+            TranslatableText(
               'Start Your Journey with affordable price',
               style: GoogleFonts.inter(
                 fontSize: 16,
@@ -107,7 +108,7 @@ class _SigninScreenState extends State<SigninScreen> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                TranslatableText(
                   'EMAIL',
                   style: TextStyle(
                     color: grey,
@@ -125,7 +126,7 @@ class _SigninScreenState extends State<SigninScreen> {
                   height: 1,
                 ),
                 h30,
-                Text(
+                TranslatableText(
                   'Password',
                   style: TextStyle(
                     color: grey,
@@ -149,7 +150,7 @@ class _SigninScreenState extends State<SigninScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      TranslatableText(
                         'Sign up',
                         style: GoogleFonts.inter(
                           fontSize: 18,
@@ -168,7 +169,7 @@ class _SigninScreenState extends State<SigninScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    TranslatableText(
                       'Already have an account?',
                       style: GoogleFonts.inter(fontSize: 16, color: grey),
                     ),
@@ -177,7 +178,7 @@ class _SigninScreenState extends State<SigninScreen> {
                       onTap: () {
                         Get.toNamed(Routes.login);  
                       },
-                      child: Text(
+                      child: TranslatableText(
                         'Sign in',
                         style: GoogleFonts.inter(fontSize: 16, color: blue),
                       ),

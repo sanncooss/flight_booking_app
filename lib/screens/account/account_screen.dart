@@ -1,6 +1,7 @@
 import 'package:flight_booking_app/screens/core/routes.dart';
 import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -81,7 +82,7 @@ class _AccountPageState extends State<AccountPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     h20,
-                    Text(
+                    TranslatableText(
                       'My Profile',
                       style: TextStyle(
                         color: white,
@@ -106,7 +107,7 @@ class _AccountPageState extends State<AccountPage> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              TranslatableText(
                                 'Jos Creative',
                                 style: TextStyle(
                                   color: white,
@@ -115,14 +116,14 @@ class _AccountPageState extends State<AccountPage> {
                                 ),
                               ),
                               h5,
-                              Text(
+                              TranslatableText(
                                 'alisanco@gmail.com',
                                 style: TextStyle(
                                   color: white,
                                 ),
                               ),
                               h5,
-                              Text(
+                              TranslatableText(
                                 '+998900777199',
                                 style: TextStyle(
                                   color: white,
@@ -170,7 +171,7 @@ class _AccountPageState extends State<AccountPage> {
                                     size: 28,
                                   ),
                                   w15,
-                                  Text(
+                                  TranslatableText(
                                     'My Order',
                                     style: TextStyle(fontSize: 20),
                                   )
@@ -211,7 +212,7 @@ class _AccountPageState extends State<AccountPage> {
                                     size: 28,
                                   ),
                                   w15,
-                                  Text(
+                                  TranslatableText(
                                     'My Voucher',
                                     style: TextStyle(fontSize: 20),
                                   )
@@ -249,7 +250,7 @@ class _AccountPageState extends State<AccountPage> {
                                     size: 28,
                                   ),
                                   w15,
-                                  Text(
+                                  TranslatableText(
                                     'Payment Methods',
                                     style: TextStyle(fontSize: 20),
                                   )
@@ -289,7 +290,7 @@ class _AccountPageState extends State<AccountPage> {
                                     size: 28,
                                   ),
                                   w15,
-                                  Text(
+                                  TranslatableText(
                                     'Invite Friends',
                                     style: TextStyle(fontSize: 20),
                                   )
@@ -322,7 +323,7 @@ class _AccountPageState extends State<AccountPage> {
                                   size: 28,
                                 ),
                                 w15,
-                                Text(
+                                TranslatableText(
                                   'Quick Login',
                                   style: TextStyle(fontSize: 20),
                                 )
@@ -382,7 +383,7 @@ class _AccountPageState extends State<AccountPage> {
                                         size: 28,
                                       ),
                                       w15,
-                                      Text(
+                                      TranslatableText(
                                         'My Order',
                                         style: TextStyle(fontSize: 20),
                                       )
@@ -419,7 +420,7 @@ class _AccountPageState extends State<AccountPage> {
                                           size: 28,
                                         ),
                                         w15,
-                                        Text(
+                                        TranslatableText(
                                           'Settings',
                                           style: TextStyle(fontSize: 20),
                                         )
@@ -465,7 +466,7 @@ class _AccountPageState extends State<AccountPage> {
                               size: 28,
                             ),
                             w15,
-                            Text(
+                            TranslatableText(
                               'Log Out',
                               style: TextStyle(fontSize: 20),
                             )

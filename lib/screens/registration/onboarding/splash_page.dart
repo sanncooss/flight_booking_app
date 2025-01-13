@@ -2,6 +2,7 @@ import 'package:flight_booking_app/screens/core/routes.dart';
 import 'package:flight_booking_app/screens/registration/onboarding/splash_page2.dart';
 import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -60,7 +61,7 @@ class SplashPage extends StatelessWidget {
               ),
             ),
             h5,
-            Text(
+            TranslatableText(
               'Explore\nThe Beautiful\nWorld!',
               style: GoogleFonts.inter(
                 fontWeight: FontWeight.bold,
@@ -79,7 +80,7 @@ class SplashPage extends StatelessWidget {
                     width: 190,
                     height: 60,
                     alignment: Alignment.center,
-                    child: Text(
+                    child: TranslatableText(
                       'Skip',
                       style: GoogleFonts.inter(
                         fontSize: 18,
@@ -110,7 +111,7 @@ class SplashPage extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        TranslatableText(
                           'Next',
                           style: GoogleFonts.inter(fontSize: 18, color: white),
                         ),

@@ -1,6 +1,7 @@
 import 'package:flight_booking_app/screens/core/routes.dart';
 import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
+import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -31,12 +32,12 @@ class _OrderConfirmedScreenState extends State<OrderConfirmedScreen> {
                 height: 250,
               ),
               h50,
-              Text(
+              TranslatableText(
                 'Order Confirmed',
                 style: TextStyle(color: white, fontSize: 28),
               ),
               h15,
-              Text(
+              TranslatableText(
                 'Thank you for your order. You will recieve\n             email confirmation shortly.',
                 style: TextStyle(color: white),
               ),
@@ -51,7 +52,7 @@ class _OrderConfirmedScreenState extends State<OrderConfirmedScreen> {
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15), color: white),
-                  child: Text(
+                  child: TranslatableText(
                     'See details',
                     style: TextStyle(fontSize: 16),
                   ),
