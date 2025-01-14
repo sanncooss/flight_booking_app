@@ -4,6 +4,7 @@ import 'package:flight_booking_app/utils/colors.dart';
 import 'package:flight_booking_app/utils/sizedboxes.dart';
 import 'package:flight_booking_app/utils/translatabletext.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class LanguagePage extends StatefulWidget {
   const LanguagePage({super.key});
@@ -42,11 +43,13 @@ class _LanguagePageState extends State<LanguagePage> {
               ),
             ),
             InkWell(
-              onTap: () {
+              onTap: () async {
                 setState(() {
                   selectedOption = 1;
                 });
-                context.setLocale(Locale('en', 'US'));
+                final newLocale = Locale('en', 'US');
+                await context.setLocale(newLocale);
+                Get.updateLocale(newLocale);
               },
               child: Container(
                 width: double.infinity,
@@ -71,10 +74,13 @@ class _LanguagePageState extends State<LanguagePage> {
                       value: 1,
                       splashRadius: 10,
                       groupValue: selectedOption,
-                      onChanged: (value) {
+                      onChanged: (value) async {
                         setState(() {
                           selectedOption = value;
                         });
+                        final newLocale = Locale('en', 'US');
+                        await context.setLocale(newLocale);
+                        Get.updateLocale(newLocale);
                       },
                     ),
                   ],
@@ -82,11 +88,13 @@ class _LanguagePageState extends State<LanguagePage> {
               ),
             ),
             InkWell(
-              onTap: () {
+              onTap: () async {
                 setState(() {
                   selectedOption = 2;
                 });
-                context.setLocale(Locale('uz', 'UZ'));
+                final newLocale = Locale('uz', 'UZ');
+                await context.setLocale(newLocale);
+                Get.updateLocale(newLocale);
               },
               child: Container(
                 width: double.infinity,
@@ -111,10 +119,13 @@ class _LanguagePageState extends State<LanguagePage> {
                       value: 2,
                       splashRadius: 10,
                       groupValue: selectedOption,
-                      onChanged: (value) {
+                      onChanged: (value) async {
                         setState(() {
                           selectedOption = value;
                         });
+                        final newLocale = Locale('uz', 'UZ');
+                        await context.setLocale(newLocale);
+                        Get.updateLocale(newLocale);
                       },
                     ),
                   ],
@@ -122,11 +133,13 @@ class _LanguagePageState extends State<LanguagePage> {
               ),
             ),
             InkWell(
-              onTap: () {
+              onTap: () async {
                 setState(() {
                   selectedOption = 3;
                 });
-                context.setLocale(Locale('ru', 'RU'));
+                final newLocale = Locale('ru', 'RU');
+                await context.setLocale(newLocale);
+                Get.updateLocale(newLocale);
               },
               child: Container(
                 width: double.infinity,
@@ -151,10 +164,13 @@ class _LanguagePageState extends State<LanguagePage> {
                       value: 3,
                       splashRadius: 10,
                       groupValue: selectedOption,
-                      onChanged: (value) {
+                      onChanged: (value) async {
                         setState(() {
                           selectedOption = value;
                         });
+                        final newLocale = Locale('ru', 'RU');
+                        await context.setLocale(newLocale);
+                        Get.updateLocale(newLocale);
                       },
                     ),
                   ],

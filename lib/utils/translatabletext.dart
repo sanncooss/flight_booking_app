@@ -5,6 +5,7 @@ class TranslatableText extends StatelessWidget {
   final String textKey;
   final TextStyle? style;
 
+
   const TranslatableText(this.textKey, {super.key, this.style});
 
   @override
