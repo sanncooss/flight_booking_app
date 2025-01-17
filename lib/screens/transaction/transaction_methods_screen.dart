@@ -423,7 +423,8 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                                                             h40,
                                                             GestureDetector(
                                                               onTap: () {
-                                                               Get.toNamed(Routes.passcode);
+                                                                Get.toNamed(Routes
+                                                                    .passcode);
                                                               },
                                                               child: Container(
                                                                 width: double
@@ -438,7 +439,8 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                                                                     borderRadius:
                                                                         BorderRadius.all(
                                                                             Radius.circular(15))),
-                                                                child: TranslatableText(
+                                                                child:
+                                                                    TranslatableText(
                                                                   'Use Passcode Instead',
                                                                   style:
                                                                       TextStyle(
@@ -487,14 +489,14 @@ class _TransactionMethodsScreenState extends State<TransactionMethodsScreen> {
                           borderRadius: BorderRadius.circular(10),
                           color: darkBlue,
                         ),
-                        width: 280,
+                        width: 250,
                         height: 62,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             TranslatableText(
                               'Proceed The Payment',
-                              style: TextStyle(fontSize: 20, color: white),
+                              style: TextStyle(fontSize: 16, color: white),
                             ),
                             w10,
                             Icon(

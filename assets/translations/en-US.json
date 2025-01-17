@@ -20,8 +20,6 @@
   "Or Sign Up With": "Or Sign Up With",
   "Don't Have an Account?": "Don't Have an Account?",
   "My Profile": "My Profile",
-  "Isfandiyor Madaminov": "Isfandiyor Madaminov",
-  "isfandiyormadaminov12@gmail.com": "isfandiyormadaminov12@gmail.com",
   "+998 (77) 777-77-77": "+998 (77) 777-77-77",
   "My Order": "My Order",
   "My Voucher": "My Voucher",
@@ -30,7 +28,7 @@
   "Quick Login": "Quick Login",
   "Settings": "Settings",
   "Log Out": "Log Out",
-  "Search Flights": "Search Flights",
+  "Search flights": "Search Flights",
   "Discover \na new world": "Discover \na new world",
   "One-way": "One-way",
   "Round-trip": "Round-trip",
@@ -122,5 +120,10 @@
   "Select your language": "Select your language",
   "English": "English",
   "Uzbek": "Uzbek",
-  "Russian": "Russian"
+  "Russian": "Russian",
+  "Contact Details": "Contact Details",
+  "Passenger info": "Passenger info",
+  "Same As Contact Details" : "Same As Contact Details",
+  "Facility": "Facility",
+  "Extra Protection": "Extra Protection"
 }

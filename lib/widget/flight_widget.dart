@@ -50,7 +50,7 @@ class FlightWidget extends StatelessWidget {
                     children: [
                       Image.asset(
                         'assets/images/flighttrip.png',
-                        width: 195,
+                        width: 150,
                         height: 30,
                         fit: BoxFit.fill,
                       ),
@@ -91,36 +91,30 @@ class FlightWidget extends StatelessWidget {
                       const TranslatableText(
                         '8:00 AM',
                         style: TextStyle(
-                            fontSize: 24, fontWeight: FontWeight.bold),
+                            fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                       TranslatableText(
                         'August 28, 2021',
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 16,
                           color: blackgrey,
                         ),
                       ),
                     ],
                   ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      w50,
-                    ],
-                  ),
+                  w50,
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       const TranslatableText(
                         '7:00 AM',
                         style: TextStyle(
-                            fontSize: 24, fontWeight: FontWeight.bold),
+                            fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                       TranslatableText(
                         'August 29, 2021',
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 16,
                           color: blackgrey,
                         ),
                       ),

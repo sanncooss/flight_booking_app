@@ -72,62 +72,23 @@ class _DeletingAccountPageState extends State<DeletingAccountPage> {
               width: double.infinity,
               height: 150,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      TranslatableText(
-                        ' • Your remaining ticket Points',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                      TranslatableText(
-                        ' cannot be used anymore.',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 12),
-                      ),
-                    ],
+                  TranslatableText(
+                    ' • Your remaining ticket Pointscannot be used\n anymore.',
+                    style: TextStyle(fontSize: 14),
                   ),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      TranslatableText(
-                        ' • Your ticket Elite Rewards benefits',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                      TranslatableText(
-                        ' will not be available anymore.',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 12),
-                      ),
-                    ],
+                  TranslatableText(
+                    ' • Your ticket Elite Rewards benefits will not be\n available anymore.',
+                    style: TextStyle(fontSize: 14),
                   ),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      TranslatableText(
-                        ' • All your pending rewards',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                      TranslatableText(
-                        ' will be deleted.',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 12),
-                      ),
-                    ],
+                  TranslatableText(
+                    ' • All your pending rewards will be deleted.',
+                    style: TextStyle(fontSize: 14),
                   ),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      TranslatableText(
-                        ' • All rewards from using credit card',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                      TranslatableText(
-                        ' can no longer be obtained',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 12),
-                      ),
-                    ],
+                  TranslatableText(
+                    ' • All rewards from using credit card can no longer\n be obtained',
+                    style: TextStyle(fontSize: 14),
                   ),
                 ],
               ),

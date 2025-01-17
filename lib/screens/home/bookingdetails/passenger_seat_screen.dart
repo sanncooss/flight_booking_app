@@ -288,7 +288,6 @@ class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
                       height: 48,
                     ),
                   ),
-                  w50,
                   w40,
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
@@ -328,7 +327,6 @@ class _SeatSelectionScreenState extends State<SeatSelectionScreen> {
                     TranslatableText("E"),
                     TranslatableText("F"),
                   ]),
-              h15,
               SizedBox(
                 height: 500,
                 width: double.infinity,

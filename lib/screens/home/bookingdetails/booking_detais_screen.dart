@@ -645,7 +645,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                   'Coverage for accidents up to \$10000',
                                   style: TextStyle(
                                     color: blackgrey,
-                                    fontSize: 15,
+                                    fontSize: 12,
                                   ),
                                 )
                               ],
@@ -664,7 +664,7 @@ class _BookingDetaisScreenState extends State<BookingDetaisScreen> {
                                   'Coverage for trip cancellation by passengers\nup to \$1250',
                                   style: TextStyle(
                                     color: blackgrey,
-                                    fontSize: 15,
+                                    fontSize: 12,
                                   ),
                                 )
                               ],

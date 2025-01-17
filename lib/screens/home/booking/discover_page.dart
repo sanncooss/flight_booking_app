@@ -66,9 +66,9 @@ class _DiscoverPageState extends State<DiscoverPage> {
                   ],
                 ),
                 TranslatableText(
-                  'Discover\na new world',
+                  'Discover \na new world',
                   style: TextStyle(
-                    fontSize: 38,
+                    fontSize: 52,
                     fontWeight: FontWeight.bold,
                     color: white,
                   ),
@@ -80,7 +80,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
             bottom: 0,
             child: Container(
               width: MediaQuery.of(context).size.width,
-              height: 480,
+              height: 580,
               decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
@@ -129,7 +129,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                         ),
                       ],
                     ),
-                    h10,
+                    h20,
                     const TranslatableText(
                       'From',
                       style: TextStyle(
@@ -165,7 +165,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                         ],
                       ),
                     ),
-                    h10,
+                    h20,
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -211,7 +211,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                         ],
                       ),
                     ),
-                    h10,
+                    h20,
                     const TranslatableText(
                       'Departure Date',
                       style: TextStyle(
@@ -336,7 +336,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                         ),
                       ),
                     ),
-                    h10,
+                    h20,
                     const TranslatableText(
                       'Travelers',
                       style: TextStyle(
@@ -372,7 +372,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                         ],
                       ),
                     ),
-                    h10,
+                    h40,
                     Button.gobutton(
                       () {
                         Get.toNamed(

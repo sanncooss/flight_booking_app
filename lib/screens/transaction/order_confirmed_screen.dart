@@ -18,7 +18,7 @@ class _OrderConfirmedScreenState extends State<OrderConfirmedScreen> {
     return Scaffold(
       body: Container(
         width: double.infinity,
-        height: 737,
+        height: 999,
         color: darkBlue,
         child: Padding(
           padding: const EdgeInsets.all(26.0),
